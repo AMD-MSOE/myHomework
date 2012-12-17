@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:id="@+id/TableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+        <Button
+            android:id="@+id/btnAll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="addItems"
+            android:text="@string/all" />
+
+        <Button
+            android:id="@+id/btnClass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/class_string" />
+
+        <Button
+            android:id="@+id/btnPriority"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:text="@string/priority" />
+
+        <Button
+            android:id="@+id/btnType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/type" />
+    </TableRow>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@android:layout/simple_list_item_2" >
+    </ListView>
