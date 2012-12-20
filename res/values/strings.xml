@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">myHomework</string>
+    <string name="all">All</string>
+    <string name="class_string">Class String</string>
+    <string name="priority">Priority</string>
+    <string name="type">Type</string>
 </resources>
