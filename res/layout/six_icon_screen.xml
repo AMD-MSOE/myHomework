@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        tools:context=".MainActivity" />
+    
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TableRow
+            android:id="@+id/tableRow1">
+            <ImageButton
+                android:id="@+id/calendarButton"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="10"
+                android:contentDescription="@+string/Calendar"/>
+            <ImageButton
+                android:id="@+id/homeworkButton"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="10"
+                android:contentDescription="@+string/Homework"/>
+            <ImageButton
+                android:id="@+id/classesButton"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="10"
+                android:contentDescription="@+string/Classes"/>
+          </TableRow>
+          
+        <TableRow
+            android:id="@+id/tableRow2">
+            <ImageButton
+                android:id="@+id/settingsButton"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="10"
+                android:contentDescription="@+string/Settings"/>
+            <ImageButton
+                android:id="@+id/aboutButton"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="10"
+                android:contentDescription="@+string/About"/>
+            <ImageButton
+                android:id="@+id/syncButton"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="10"
+                android:contentDescription="@+string/Sync"/>
+            
+          </TableRow>
+     
+        
+    </TableLayout>
+
+</RelativeLayout>
