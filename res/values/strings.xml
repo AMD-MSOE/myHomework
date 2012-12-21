@@ -1,7 +1,13 @@
 <resources>
     <string name="app_name">myHomework</string>
+    
+    <!-- Homework layout strings -->
     <string name="all">All</string>
     <string name="class_string">Class String</string>
     <string name="priority">Priority</string>
     <string name="type">Type</string>
+    
+    <!-- Calendar layout string -->
+    <string name="homework_header">Homework</string>
+    <string name="classes_header">Classes</string>
 </resources>

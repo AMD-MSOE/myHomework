@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/Activity">
+    
+    <include layout="@layout/action_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+    <CalendarView
+        android:id="@+id/calendarView1"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:showWeekNumber="false"
+        android:selectedWeekBackgroundColor="#BB58ACFA" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/homework_header"
+                android:textColor="#000000" />
+            
+            <ListView android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/classes_header"
+                android:textColor="#000000" />
+            
+            <ListView android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

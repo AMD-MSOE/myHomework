@@ -1,5 +1,12 @@
 <resources>
 
     <style name="AppTheme" parent="android:Theme.Light" />
+    
+    <!-- Style for activities -->
+    <style name="Activity">
+    	<item name="android:layout_width">fill_parent</item>
+    	<item name="android:layout_height">fill_parent</item>
+        <item name="android:background">#FFFFFF</item>
+    </style>
 
 </resources>
