@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Activity"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/action_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:onClick="back"
+        android:text="@string/back" />
+
+    <TextView
+        android:id="@+id/classesMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/btnBack"
+        android:layout_centerHorizontal="true"
+        android:text="@string/className" 
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/btnNewClass"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/btnBack"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="newClass"
+        android:text="@string/newClass" />
+
+    <TextView
+        android:id="@+id/classInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnBack"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/classInfo" 
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
