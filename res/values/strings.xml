@@ -4,12 +4,10 @@
     <!-- Homework layout strings -->
     <string name="all">All</string>
     <string name="class_string">Class String</string>
-    <string name="priority">Priority</string>
+    <string name="homework">New Homework</string>
     <string name="type">Type</string>
     <string name="back">Back</string>
-    <string name="newClass">New Class</string>
-    <string name="className">Classes</string>
-    <string name="classInfo">Class Names go here</string>
+    <string name="homeworkName">Homework</string>
     
     <!-- Calendar layout string -->
     <string name="homework_header">Homework</string>
