@@ -2,6 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
+    
+    <include layout="@layout/action_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -21,7 +23,10 @@
                 android:layout_width="40pt"
                 android:layout_height="40pt"
                 android:layout_weight="10"
-                android:contentDescription="@+string/Calendar"/>
+                android:contentDescription="@+string/Calendar"
+                android:src="@drawable/calendar"
+                android:scaleType="fitCenter"
+                android:background="@null"/>
             <ImageButton
                 android:id="@+id/homeworkButton"
                 android:layout_width="40pt"
@@ -45,17 +50,17 @@
                 android:layout_weight="10"
                 android:contentDescription="@+string/Settings"/>
             <ImageButton
-                android:id="@+id/aboutButton"
+                android:id="@+id/accountButton"
                 android:layout_width="40pt"
                 android:layout_height="40pt"
                 android:layout_weight="10"
                 android:contentDescription="@+string/About"/>
             <ImageButton
-                android:id="@+id/syncButton"
+                android:id="@+id/aboutButton"
                 android:layout_width="40pt"
                 android:layout_height="40pt"
                 android:layout_weight="10"
-                android:contentDescription="@+string/Sync"/>
+                android:contentDescription="@+string/Sync" />
             
           </TableRow>
      
