@@ -12,4 +12,7 @@
     <!-- Calendar layout string -->
     <string name="homework_header">Homework</string>
     <string name="classes_header">Classes</string>
+    
+    <!-- Action bar strings -->
+    <string name="plus">+</string>
 </resources>
