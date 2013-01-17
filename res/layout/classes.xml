@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@id/btnBack"
         android:layout_centerHorizontal="true"
-        android:text="@string/className" 
+        android:text="@+string/className" 
         android:textColor="@android:color/black" />
 
     <Button
@@ -31,7 +31,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:onClick="newClass"
-        android:text="@string/newClass" />
+        android:text="@+string/newClass" />
 
     <TextView
         android:id="@+id/classInfo"
@@ -41,7 +41,7 @@
         android:layout_below="@+id/btnBack"
         android:layout_marginLeft="19dp"
         android:layout_marginTop="15dp"
-        android:text="@string/classInfo" 
+        android:text="@+string/classInfo" 
         android:textColor="@android:color/black" />
 
 </RelativeLayout>

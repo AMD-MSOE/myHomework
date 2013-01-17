@@ -21,7 +21,7 @@ public class MainActivity extends Activity {
 		calendarButton.setOnClickListener(new OnClickListener() {
 
 			@Override
-			public void onClick(View arg0) {
+			public void onClick(View v) {
 				switchActivity(SwitchActivity.Calendar);
 			}
 			
