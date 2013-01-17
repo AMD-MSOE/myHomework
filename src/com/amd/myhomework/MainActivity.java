@@ -9,7 +9,9 @@ import android.widget.ImageButton;
 
 public class MainActivity extends Activity {
 	
-	ImageButton calendarButton;
+	private ImageButton calendarButton;
+	private ImageButton classesButton;
+	private enum SwitchActivity {Calendar, Homework, Classes, Settings, Account, About};
 	
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -20,15 +22,34 @@ public class MainActivity extends Activity {
 
 			@Override
 			public void onClick(View arg0) {
-				goToCalendar();
+				switchActivity(SwitchActivity.Calendar);
+			}
+			
+		});
+		
+		classesButton = (ImageButton) findViewById(R.id.classesButton);
+		classesButton.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				switchActivity(SwitchActivity.Classes);
 			}
 			
 		});
 		
 	}
 	
-	private void goToCalendar() {
-		Intent calendarChange = new Intent(MainActivity.this, CalendarActivity.class);
-		this.startActivity(calendarChange);
+	private void switchActivity(SwitchActivity type){
+		Intent activityChange;
+		switch (type){
+		case Calendar:
+			activityChange = new Intent(MainActivity.this, CalendarActivity.class);
+			this.startActivity(activityChange);
+			break;
+		case Classes:
+			activityChange = new Intent(MainActivity.this, classesActivity.class);
+			this.startActivity(activityChange);
+			break;
+		}
 	}
 }
