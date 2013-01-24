@@ -60,6 +60,7 @@ public class MainActivity extends Activity {
 		case Homework:
 			activityChange = new Intent(MainActivity.this, HomeworkActivity.class);
 			this.startActivity(activityChange);
+			break;
 		case Classes:
 			activityChange = new Intent(MainActivity.this, classesActivity.class);
 			this.startActivity(activityChange);
