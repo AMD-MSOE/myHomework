@@ -10,6 +10,7 @@ import android.widget.ImageButton;
 public class MainActivity extends Activity {
 	
 	private ImageButton calendarButton;
+	private ImageButton homeworkButton;
 	private ImageButton classesButton;
 	private enum SwitchActivity {Calendar, Homework, Classes, Settings, Account, About};
 	
@@ -23,6 +24,16 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				switchActivity(SwitchActivity.Calendar);
+			}
+			
+		});
+		
+		homeworkButton = (ImageButton) findViewById(R.id.homeworkButton);
+		homeworkButton.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				switchActivity(SwitchActivity.Homework);
 			}
 			
 		});
@@ -46,6 +57,9 @@ public class MainActivity extends Activity {
 			activityChange = new Intent(MainActivity.this, CalendarActivity.class);
 			this.startActivity(activityChange);
 			break;
+		case Homework:
+			activityChange = new Intent(MainActivity.this, HomeworkActivity.class);
+			this.startActivity(activityChange);
 		case Classes:
 			activityChange = new Intent(MainActivity.this, classesActivity.class);
 			this.startActivity(activityChange);
