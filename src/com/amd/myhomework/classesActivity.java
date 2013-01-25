@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 import com.amd.myhomework.adapters.SimpleListAdapter;
 
-public class ClassesActivity extends Activity{
+public class classesActivity extends Activity{
 
 	ListView lstClasses;
 	SimpleListAdapter adapterClasses;
