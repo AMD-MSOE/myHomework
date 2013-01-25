@@ -25,12 +25,11 @@ public class ClassesActivity extends Activity{
 		
 		classes = new ArrayList<Class>();
 		lstClasses = (ListView)findViewById(R.id.activity_classes_lst_classes);
-		adapterClasses = new SimpleListAdapter(this, classes, Color.BLUE);
-		classes.add(new Class());
+		adapterClasses = new SimpleListAdapter<Class>(this, classes, Color.BLUE);
 	}
 	
 	public void leftButtonClicked(View v) {
-		
+		this.onBackPressed();
 	}
 	
 	public void rightButtonClicked(View v) {
@@ -38,7 +37,8 @@ public class ClassesActivity extends Activity{
 	}
 	
 	public void addClass() {
-		
+		classes.add(new Class("Class - "+System.currentTimeMillis()));
+		adapterClasses.notifyDataSetChanged();
 	}
 
 }

@@ -25,7 +25,7 @@ public class HomeworkActivity extends Activity {
 		homework.add("one");
 		homework.add("two");
 		
-		adapter = new SimpleListAdapter(this, homework, null);
+		//adapter = new SimpleListAdapter(this, homework, null);
 		
 		listView = (ListView)findViewById(R.id.list);
 		listView.setAdapter(adapter);
