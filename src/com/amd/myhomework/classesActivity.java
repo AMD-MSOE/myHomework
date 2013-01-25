@@ -1,46 +1,41 @@
 package com.amd.myhomework;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import android.app.Activity;
-import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
-import android.widget.Button;
 import android.view.View;
-import android.view.View.OnClickListener;
+import android.widget.ListView;
 
-public class classesActivity extends Activity{
+import com.amd.myhomework.adapters.SimpleListAdapter;
 
-	Button button;
-	MainActivity main = new MainActivity();
+public class ClassesActivity extends Activity{
 
+	ListView lstClasses;
+	SimpleListAdapter adapterClasses;
+	List<Object> classes;
 	@Override
 	public void onCreate(Bundle savedInstance) {
 		super.onCreate(savedInstance);
-		setContentView(R.layout.classes);
+		setContentView(R.layout.activity_classes);
+		
+		classes = new ArrayList<Object>();
+		lstClasses = (ListView)findViewById(R.id.activity_classes_lst_classes);
+		adapterClasses = new SimpleListAdapter(this, classes, Color.BLUE);
 	}
-
-	public void addListenerOnButton() {
-
-		button = (Button) findViewById(R.id.btnBack);
-
-		button.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View arg0) {
-
-				switchActivity();
-
-			}
-
-
-
-		});
-
+	
+	public void leftButtonClicked(View v) {
+		
 	}
-	private void switchActivity() {
-		Intent answer = new Intent(classesActivity.this, MainActivity.class);
-
-		this.startActivity(answer);
-
+	
+	public void rightButtonClicked(View v) {
+		addClass();
+	}
+	
+	public void addClass() {
+		
 	}
 
 }

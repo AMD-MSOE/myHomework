@@ -22,9 +22,9 @@ public class SimpleListAdapter extends BaseAdapter {
 	
 	List<Object> items;
 	Context context;
-	Color color;
+	int color;
 	
-	public SimpleListAdapter(Context context, List<Object> items, Color color) {
+	public SimpleListAdapter(Context context, List<Object> items, int color) {
 		this.items = items;
 		this.context = context;
 		this.color = color;
@@ -53,7 +53,8 @@ public class SimpleListAdapter extends BaseAdapter {
     	TextView txtGroup = (TextView) view.findViewById(R.id.adapter_item_lbl_name);
     	
     	txtGroup.setText(items.get(position).toString());
-    	txtGroup.setTextColor(Color.rgb(10,50,170));
+    	view.setBackgroundColor(color);
+    	
 		return view;
 	}
 

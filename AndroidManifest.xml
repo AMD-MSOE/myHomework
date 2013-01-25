@@ -24,7 +24,7 @@
             android:screenOrientation="portrait">
         </activity>
         
-        <activity android:name=".classesActivity"
+        <activity android:name="com.amd.myhomework.ClassesActivity"
             android:label="@string/app_name">
         </activity>
         

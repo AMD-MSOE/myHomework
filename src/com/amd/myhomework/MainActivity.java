@@ -66,7 +66,7 @@ public class MainActivity extends Activity {
 			this.startActivity(activityChange);
 			break;
 		case Classes:
-			activityChange = new Intent(MainActivity.this, classesActivity.class);
+			activityChange = new Intent(MainActivity.this, ClassesActivity.class);
 			this.startActivity(activityChange);
 			break;
 		}
