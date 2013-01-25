@@ -3,6 +3,7 @@ package com.amd.myhomework.adapters;
 import java.util.List;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,10 +22,12 @@ public class SimpleListAdapter extends BaseAdapter {
 	
 	List<Object> items;
 	Context context;
+	Color color;
 	
-	public SimpleListAdapter(Context context, List<Object> items) {
+	public SimpleListAdapter(Context context, List<Object> items, Color color) {
 		this.items = items;
 		this.context = context;
+		this.color = color;
 	}
 
 	@Override
@@ -50,7 +53,7 @@ public class SimpleListAdapter extends BaseAdapter {
     	TextView txtGroup = (TextView) view.findViewById(R.id.adapter_item_lbl_name);
     	
     	txtGroup.setText(items.get(position).toString());
-    	
+    	txtGroup.setTextColor(Color.rgb(10,50,170));
 		return view;
 	}
 
