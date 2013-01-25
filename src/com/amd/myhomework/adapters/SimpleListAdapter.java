@@ -3,7 +3,6 @@ package com.amd.myhomework.adapters;
 import java.util.List;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,13 +17,13 @@ import com.amd.myhomework.R;
  * @author Josh Ault
  *
  */
-public class SimpleListAdapter extends BaseAdapter {
+public class SimpleListAdapter<T extends Object> extends BaseAdapter {
 	
-	List<Object> items;
+	List<T> items;
 	Context context;
 	int color;
 	
-	public SimpleListAdapter(Context context, List<Object> items, int color) {
+	public SimpleListAdapter(Context context, List<T> items, int color) {
 		this.items = items;
 		this.context = context;
 		this.color = color;
