@@ -12,7 +12,11 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:showWeekNumber="false"
-        android:selectedWeekBackgroundColor="#BB58ACFA" />
+        android:selectedWeekBackgroundColor="#BB58ACFA"
+        android:focusedMonthDateColor="#000000"
+        android:unfocusedMonthDateColor="#7F7F7F"
+        android:weekNumberColor="#000000"
+        android:weekSeparatorLineColor="#FFFFFF" />
 
     <ScrollView
         android:id="@+id/scrollView1"
