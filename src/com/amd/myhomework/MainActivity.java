@@ -18,6 +18,10 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.six_icon_screen);
 		
+		View v = (View) findViewById(R.id.activity_main_action_bar);
+		v.findViewById(R.id.btn_left).setVisibility(View.INVISIBLE);
+		v.findViewById(R.id.btn_right).setVisibility(View.INVISIBLE);
+		
 		calendarButton = (ImageButton) findViewById(R.id.calendarButton);
 		calendarButton.setOnClickListener(new OnClickListener() {
 
@@ -66,5 +70,13 @@ public class MainActivity extends Activity {
 			this.startActivity(activityChange);
 			break;
 		}
+	}
+	
+	public void leftButtonClicked(View v){
+		//pass
+	}
+	
+	public void rightButtonClicked(View v){
+		//pass
 	}
 }
