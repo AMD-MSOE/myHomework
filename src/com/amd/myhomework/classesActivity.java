@@ -25,7 +25,8 @@ public class ClassesActivity extends Activity{
 		
 		classes = new ArrayList<Class>();
 		lstClasses = (ListView)findViewById(R.id.activity_classes_lst_classes);
-		adapterClasses = new SimpleListAdapter<Class>(this, classes, Color.BLUE);
+		adapterClasses = new SimpleListAdapter<Class>(this, classes, Color.argb(127, 10, 50, 170));
+		lstClasses.setAdapter(adapterClasses);
 	}
 	
 	public void leftButtonClicked(View v) {
