@@ -63,8 +63,17 @@ public class ClassesActivity extends Activity{
 			
 		});
 		
+		Button addButton = (Button)dialog.findViewById(R.id.dialog_add_class_btn_add);
+		addButton.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				
+			}
+			
+		});
+		
 		dialog.show();
-		dialog.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		dialog.getWindow().setGravity(Gravity.CENTER);
 	}
 
