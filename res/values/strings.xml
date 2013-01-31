@@ -13,6 +13,16 @@
     <string name="homework_header">Homework</string>
     <string name="classes_header">Classes</string>
     
+    <!-- Class strings -->
+    <string name="add_class">Add a Class</string>
+    <string name="choose_color">Choose a color</string>
+    <string name="class_name">Class name</string>
+    
     <!-- Action bar strings -->
     <string name="plus">+</string>
+    
+    <!-- Dialog strings -->
+    <string name="name">Name</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
 </resources>

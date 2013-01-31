@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="@string/class_name"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:id="@+id/dialog_add_class_txt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:layout_marginTop="5dp">
+    </EditText>
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="@string/choose_color"
+        android:layout_marginTop="15dp" />
+    
+    
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioGroup android:id="@+id/dialog_add_class_grp_color"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:gravity="center"
+	        android:layout_marginTop="5dp" >
+	        
+	        <ToggleButton android:id="@+id/dialog_add_class_grp_btn_red" 
+	            android:layout_height="50dp"
+	            android:layout_width="50dp"
+	            android:background="#FF0000" />
+	        
+	        <ToggleButton android:id="@+id/dialog_add_class_grp_btn_green" 
+	            android:layout_height="50dp"
+	            android:layout_width="50dp"
+	            android:background="#00FF00" />
+	        
+	        <ToggleButton android:id="@+id/dialog_add_class_grp_btn_blue" 
+	            android:layout_height="50dp"
+	            android:layout_width="50dp"
+	            android:background="#0000FF" />
+	        
+	        <ToggleButton android:id="@+id/dialog_add_class_grp_btn_yellow" 
+	            android:layout_height="50dp"
+	            android:layout_width="50dp"
+	            android:background="#FFFF00" />
+	        
+	        <ToggleButton android:id="@+id/dialog_add_class_grp_btn_pink" 
+	            android:layout_height="50dp"
+	            android:layout_width="50dp"
+	            android:background="#FF00FF" />
+	        
+	        <ToggleButton android:id="@+id/dialog_add_class_grp_btn_orange" 
+	            android:layout_height="50dp"
+	            android:layout_width="50dp"
+	            android:background="#FFA500" />
+	        
+	        <ToggleButton android:id="@+id/dialog_add_class_grp_btn_gray" 
+	            android:layout_height="50dp"
+	            android:layout_width="50dp"
+	            android:background="#888888" />
+	        
+	        <ToggleButton android:id="@+id/dialog_add_class_grp_btn_purple" 
+	            android:layout_height="50dp"
+	            android:layout_width="50dp"
+	            android:background="#800080" />
+	        
+	    </RadioGroup>
+    </HorizontalScrollView>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal"
+        android:gravity="center" android:layout_marginTop="15dp">
+	    
+	    <Button
+	        android:id="@+id/dialog_add_class_btn_add"
+	        android:layout_width="80dp"
+	        android:layout_height="45dp"
+	        android:text="@string/add" />
+	
+	    <Button
+	        android:id="@+id/dialog_add_class_btn_cancel"
+	        android:layout_width="80dp"
+	        android:layout_height="45dp"
+	        android:text="@string/cancel" />
+    
+    </LinearLayout>
+
+</LinearLayout>

@@ -22,12 +22,13 @@ public class SimpleListAdapter<T extends Object> extends BaseAdapter {
 	
 	List<T> items;
 	Context context;
-	int color;
+	int borderColor, backgroundColor;
 	
 	public SimpleListAdapter(Context context, List<T> items, int color) {
 		this.items = items;
 		this.context = context;
-		this.color = color;
+		this.borderColor = color;
+		this.backgroundColor = Color.argb(60, Color.red(color), Color.green(color), Color.blue(color));
 	}
 
 	@Override
@@ -53,7 +54,9 @@ public class SimpleListAdapter<T extends Object> extends BaseAdapter {
     	TextView txtGroup = (TextView) view.findViewById(R.id.adapter_item_lbl_name);
     	
     	txtGroup.setText(items.get(position).toString());
-    	view.setBackgroundColor(color);
+    	view.setBackgroundColor(borderColor);
+    	
+    	view.findViewById(R.id.adapter_item_transparent).setBackgroundColor(backgroundColor);
     	
 		return view;
 	}
