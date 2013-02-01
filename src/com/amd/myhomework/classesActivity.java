@@ -16,7 +16,6 @@ import android.widget.ListView;
 
 import com.amd.myhomework.adapters.SimpleListAdapter;
 import com.amd.myhomework.models.Class;
-import com.amd.myhomework.sharedpreferences.SavePreferences;
 
 public class ClassesActivity extends Activity{
 
@@ -33,7 +32,6 @@ public class ClassesActivity extends Activity{
 		lstClasses = (ListView)findViewById(R.id.activity_classes_lst_classes);
 		adapterClasses = new SimpleListAdapter<Class>(this, classes, Color.rgb(255, 0, 0));
 		lstClasses.setAdapter(adapterClasses);
-		SavePreferences.getInstance().setContext(this);
 	}
 	
 	public void leftButtonClicked(View v) {
