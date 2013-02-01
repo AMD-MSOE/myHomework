@@ -55,6 +55,8 @@
                 android:layout_width="40pt"
                 android:layout_height="40pt"
                 android:layout_weight="10"
+                android:src="@drawable/icon_settings"
+                android:background="@null"
                 android:contentDescription="@+string/Settings"/>
             <ImageButton
                 android:id="@+id/accountButton"

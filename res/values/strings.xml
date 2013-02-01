@@ -3,15 +3,19 @@
     
     <!-- Homework layout strings -->
     <string name="all">All</string>
-    <string name="class_string">Class String</string>
+    <string name="classes">Classes</string>
     <string name="homework">New Homework</string>
     <string name="type">Type</string>
     <string name="back">Back</string>
     <string name="homeworkName">Homework</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="sync">Sync</string>
     
     <!-- Calendar layout string -->
     <string name="homework_header">Homework</string>
     <string name="classes_header">Classes</string>
+    <string name="calendar">Calendar</string>
     
     <!-- Class strings -->
     <string name="add_class">Add a Class</string>

@@ -12,6 +12,7 @@ public class MainActivity extends Activity {
 	private ImageButton calendarButton;
 	private ImageButton homeworkButton;
 	private ImageButton classesButton;
+	private ImageButton settingsButton;
 	private enum SwitchActivity {Calendar, Homework, Classes, Settings, Account, About};
 	
 	public void onCreate(Bundle savedInstanceState) {
@@ -52,6 +53,16 @@ public class MainActivity extends Activity {
 			
 		});
 		
+		settingsButton = (ImageButton) findViewById(R.id.settingsButton);
+		settingsButton.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				switchActivity(SwitchActivity.Settings);
+			}
+			
+		});
+		
 	}
 	
 	private void switchActivity(SwitchActivity type){
@@ -67,6 +78,10 @@ public class MainActivity extends Activity {
 			break;
 		case Classes:
 			activityChange = new Intent(MainActivity.this, ClassesActivity.class);
+			this.startActivity(activityChange);
+			break;
+		case Settings:
+			activityChange = new Intent(MainActivity.this, SettingsActivity.class);
 			this.startActivity(activityChange);
 			break;
 		}
