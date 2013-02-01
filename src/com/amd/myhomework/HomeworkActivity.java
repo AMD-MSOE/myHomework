@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.ListView;
 
 import com.amd.myhomework.adapters.SimpleListAdapter;
+import com.amd.myhomework.sharedpreferences.SavePreferences;
 
 public class HomeworkActivity extends Activity {
 	
@@ -32,6 +33,7 @@ public class HomeworkActivity extends Activity {
 		
 		homework.add("three");
 		adapter.notifyDataSetChanged();
+		SavePreferences.getInstance().setContext(this);
 	}
 	
 	public void leftButtonClicked(View v){
