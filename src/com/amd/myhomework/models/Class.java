@@ -2,7 +2,7 @@ package com.amd.myhomework.models;
 
 import java.io.Serializable;
 
-public class Class implements Serializable{
+public class Class {
 
 	private String name;
 	
