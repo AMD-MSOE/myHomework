@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -16,6 +17,7 @@ import android.widget.ListView;
 import android.widget.RadioGroup;
 import android.widget.ToggleButton;
 
+import com.amd.myhomework.R.id;
 import com.amd.myhomework.adapters.SimpleListAdapter;
 import com.amd.myhomework.models.Class;
 import com.amd.myhomework.sharedpreferences.SavePreferences;
@@ -85,7 +87,7 @@ public class ClassesActivity extends Activity{
 			public void onClick(View v) {
 				String name = className.getText().toString();
 				int classColor = Color.WHITE;
-				if (colorButtons.getCheckedRadioButtonId() == -1){
+				if (colorButtons.getCheckedRadioButtonId() != -1){
 					ToggleButton selectedColor = (ToggleButton)dialog.findViewById(colorButtons.getCheckedRadioButtonId());
 					if (selectedColor.equals(blue)){
 						classColor = Color.BLUE;
@@ -108,6 +110,7 @@ public class ClassesActivity extends Activity{
 					classColor = Color.WHITE;
 				}
 				addClass(name, classColor);
+				dialog.dismiss();
 			}
 			
 		});
