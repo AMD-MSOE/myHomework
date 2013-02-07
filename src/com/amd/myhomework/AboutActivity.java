@@ -1,24 +1,22 @@
 package com.amd.myhomework;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class CalendarActivity extends Activity {
+public class AboutActivity extends Activity {
 	
 	@Override
 	public void onCreate(Bundle savedInstance) {
 		super.onCreate(savedInstance);
-		setContentView(R.layout.activity_calendar);
+		setContentView(R.layout.activity_about);
 	}
 	
 	public void leftButtonClicked(View view) {
-		super.onBackPressed();
+		this.onBackPressed();
 	}
 	
 	public void rightButtonClicked(View view) {
-		startActivity(new Intent(CalendarActivity.this, HomeworkActivity.class));
+		//pass
 	}
-
 }

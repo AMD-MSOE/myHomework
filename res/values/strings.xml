@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">myHomework</string>
+    <string name="about">This app was developed by the Association of Mobile Developers at the Milwaukee School of Engineering in order to learn the basics of android programming by copying the app by Instin LLC \"myHomework\"</string>
     
     <!-- Homework layout strings -->
     <string name="all">All</string>
@@ -9,7 +10,6 @@
     <string name="back">Back</string>
     <string name="homeworkName">Homework</string>
     <string name="settings">Settings</string>
-    <string name="about">About</string>
     <string name="sync">Sync</string>
     <string name="homework_label">Name of assignment</string>
     

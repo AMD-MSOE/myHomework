@@ -37,6 +37,10 @@
             android:label="@string/app_name">
         </activity>
         
+        <activity android:name="com.amd.myhomework.AboutActivity"
+            android:label="@string/app_name">
+        </activity>
+        
     </application>
 
 </manifest>

@@ -69,7 +69,10 @@
                 android:layout_width="40pt"
                 android:layout_height="40pt"
                 android:layout_weight="10"
-                android:contentDescription="@+string/Sync" />
+                android:contentDescription="@+string/Sync"
+                android:src="@drawable/question_mark"
+                android:scaleType="fitCenter"
+                android:background="@null" />
             
           </TableRow>
      
