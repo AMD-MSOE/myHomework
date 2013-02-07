@@ -14,6 +14,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.ToggleButton;
 
@@ -35,7 +36,7 @@ public class ClassesActivity extends Activity{
 		
 		classes = new ArrayList<Class>();
 		lstClasses = (ListView)findViewById(R.id.activity_classes_lst_classes);
-		adapterClasses = new SimpleListAdapter<Class>(this, classes, Color.rgb(255, 0, 0));
+		adapterClasses = new SimpleListAdapter<Class>(this, classes);
 		lstClasses.setAdapter(adapterClasses);
 		SavePreferences.getInstance().setContext(this);
 	}
@@ -61,14 +62,14 @@ public class ClassesActivity extends Activity{
 		final EditText className = (EditText)dialog.findViewById(R.id.dialog_add_class_txt_name);
 		final RadioGroup colorButtons = (RadioGroup)dialog.findViewById(R.id.dialog_add_class_grp_color);
 		
-		final ToggleButton blue = (ToggleButton)dialog.findViewById(R.id.dialog_add_class_grp_btn_blue);
-		final ToggleButton gray = (ToggleButton)dialog.findViewById(R.id.dialog_add_class_grp_btn_gray);
-		final ToggleButton green = (ToggleButton)dialog.findViewById(R.id.dialog_add_class_grp_btn_green);
-		final ToggleButton orange = (ToggleButton)dialog.findViewById(R.id.dialog_add_class_grp_btn_orange);
-		final ToggleButton pink = (ToggleButton)dialog.findViewById(R.id.dialog_add_class_grp_btn_pink);
-		final ToggleButton purple = (ToggleButton)dialog.findViewById(R.id.dialog_add_class_grp_btn_purple);
-		final ToggleButton red = (ToggleButton)dialog.findViewById(R.id.dialog_add_class_grp_btn_red);
-		final ToggleButton yellow = (ToggleButton)dialog.findViewById(R.id.dialog_add_class_grp_btn_yellow);
+		final RadioButton blue = (RadioButton)dialog.findViewById(R.id.dialog_add_class_grp_btn_blue);
+		final RadioButton gray = (RadioButton)dialog.findViewById(R.id.dialog_add_class_grp_btn_gray);
+		final RadioButton green = (RadioButton)dialog.findViewById(R.id.dialog_add_class_grp_btn_green);
+		final RadioButton orange = (RadioButton)dialog.findViewById(R.id.dialog_add_class_grp_btn_orange);
+		final RadioButton pink = (RadioButton)dialog.findViewById(R.id.dialog_add_class_grp_btn_pink);
+		final RadioButton purple = (RadioButton)dialog.findViewById(R.id.dialog_add_class_grp_btn_purple);
+		final RadioButton red = (RadioButton)dialog.findViewById(R.id.dialog_add_class_grp_btn_red);
+		final RadioButton yellow = (RadioButton)dialog.findViewById(R.id.dialog_add_class_grp_btn_yellow);
 		
 		Button cancelButton = (Button)dialog.findViewById(R.id.dialog_add_class_btn_cancel);
 		cancelButton.setOnClickListener(new OnClickListener() {
