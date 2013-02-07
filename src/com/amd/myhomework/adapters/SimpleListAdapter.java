@@ -11,6 +11,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.amd.myhomework.R;
+import com.amd.myhomework.models.MyHomeworkModel;
 
 /**
  * This list adapter can be used for homework, or for classes or any list that simply
@@ -18,17 +19,15 @@ import com.amd.myhomework.R;
  * @author Josh Ault
  *
  */
-public class SimpleListAdapter<T extends Object> extends BaseAdapter {
+public class SimpleListAdapter<T extends MyHomeworkModel> extends BaseAdapter {
 	
 	List<T> items;
 	Context context;
 	int borderColor, backgroundColor;
 	
-	public SimpleListAdapter(Context context, List<T> items, int color) {
+	public SimpleListAdapter(Context context, List<T> items) {
 		this.items = items;
 		this.context = context;
-		this.borderColor = color;
-		this.backgroundColor = Color.argb(60, Color.red(color), Color.green(color), Color.blue(color));
 	}
 
 	@Override
@@ -51,12 +50,14 @@ public class SimpleListAdapter<T extends Object> extends BaseAdapter {
     	LayoutInflater vi = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     	View view = vi.inflate(R.layout.adapter_item, null);
     	
+    	MyHomeworkModel model = items.get(position);
+    	
     	TextView txtGroup = (TextView) view.findViewById(R.id.adapter_item_lbl_name);
     	
-    	txtGroup.setText(items.get(position).toString());
-    	view.setBackgroundColor(borderColor);
+    	txtGroup.setText(model.getName());
+    	view.setBackgroundColor(Color.argb(60, Color.red(model.getColor()), Color.green(model.getColor()), Color.blue(model.getColor())));
     	
-    	view.findViewById(R.id.adapter_item_transparent).setBackgroundColor(backgroundColor);
+    	view.findViewById(R.id.adapter_item_transparent).setBackgroundColor(model.getColor());
     	
 		return view;
 	}

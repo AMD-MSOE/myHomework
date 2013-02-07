@@ -2,7 +2,8 @@ package com.amd.myhomework.models;
 
 import java.io.Serializable;
 
-public class Class implements Serializable{
+@SuppressWarnings("serial")
+public class Class implements Serializable, MyHomeworkModel{
 
 	private String name;
 	private int color;
@@ -12,6 +13,7 @@ public class Class implements Serializable{
 		this.color = color;
 	}
 	
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -19,5 +21,10 @@ public class Class implements Serializable{
 	@Override
 	public String toString() {
 		return getName();
+	}
+
+	@Override
+	public int getColor() {
+		return color;
 	}
 }
