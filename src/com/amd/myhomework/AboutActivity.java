@@ -10,6 +10,9 @@ public class AboutActivity extends Activity {
 	public void onCreate(Bundle savedInstance) {
 		super.onCreate(savedInstance);
 		setContentView(R.layout.activity_about);
+		
+		View v = (View) findViewById(R.id.activity_about_action_bar);
+		v.findViewById(R.id.btn_right).setVisibility(View.GONE);
 	}
 	
 	public void leftButtonClicked(View view) {

@@ -1,21 +1,18 @@
 package com.amd.myhomework.sharedpreferences;
 
-import com.amd.myhomework.models.Class;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.io.OptionalDataException;
-import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.List;
 
 import android.content.Context;
-import android.content.SharedPreferences;
+
+import com.amd.myhomework.models.Class;
+import com.amd.myhomework.models.Homework;
 
 public class SavePreferences {
 
@@ -88,7 +85,7 @@ public class SavePreferences {
 		return classes;
 	}
 
-	public void saveHomework(/* Homework hw */) {
-
+	public void saveHomework(Homework hw) {
+		
 	}
 }

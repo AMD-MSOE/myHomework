@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
     
     <include android:id="@+id/activity_main_action_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/action_bar" />
 
@@ -63,13 +64,13 @@
                 android:layout_width="40pt"
                 android:layout_height="40pt"
                 android:layout_weight="10"
-                android:contentDescription="@+string/About"/>
+                android:contentDescription="@+string/Account"/>
             <ImageButton
                 android:id="@+id/aboutButton"
                 android:layout_width="40pt"
                 android:layout_height="40pt"
                 android:layout_weight="10"
-                android:contentDescription="@+string/Sync"
+                android:contentDescription="@+string/About"
                 android:src="@drawable/question_mark"
                 android:scaleType="fitCenter"
                 android:background="@null" />
