@@ -40,45 +40,55 @@
 	        android:gravity="center"
 	        android:layout_marginTop="5dp" >
 	        
-	        <ToggleButton android:id="@+id/dialog_add_class_grp_btn_red" 
+	        <RadioButton android:id="@+id/dialog_add_class_grp_btn_red" 
 	            android:layout_height="50dp"
 	            android:layout_width="50dp"
-	            android:background="#FF0000" />
+	            android:background="#FF0000"
+	            android:gravity="center" />
+	        	        
+	        <RadioButton android:id="@+id/dialog_add_class_grp_btn_green" 
+	            android:layout_height="50dp"
+	            android:layout_width="50dp"
+	            android:background="#00FF00"     
+	            android:gravity="center" />
+	        />
 	        
-	        <ToggleButton android:id="@+id/dialog_add_class_grp_btn_green" 
+	        <RadioButton android:id="@+id/dialog_add_class_grp_btn_blue" 
 	            android:layout_height="50dp"
 	            android:layout_width="50dp"
-	            android:background="#00FF00" />
+	            android:background="#0000FF" 
+	            android:gravity="center" />
 	        
-	        <ToggleButton android:id="@+id/dialog_add_class_grp_btn_blue" 
+	        <RadioButton android:id="@+id/dialog_add_class_grp_btn_yellow" 
 	            android:layout_height="50dp"
 	            android:layout_width="50dp"
-	            android:background="#0000FF" />
+	            android:background="#FFFF00" 
+	            android:gravity="center" />
 	        
-	        <ToggleButton android:id="@+id/dialog_add_class_grp_btn_yellow" 
-	            android:layout_height="50dp"
-	            android:layout_width="50dp"
-	            android:background="#FFFF00" />
 	        
-	        <ToggleButton android:id="@+id/dialog_add_class_grp_btn_pink" 
+	        <RadioButton android:id="@+id/dialog_add_class_grp_btn_pink" 
 	            android:layout_height="50dp"
 	            android:layout_width="50dp"
-	            android:background="#FF00FF" />
+	            android:background="#FF00FF" 
+	                android:gravity="center" />
 	        
-	        <ToggleButton android:id="@+id/dialog_add_class_grp_btn_orange" 
+	        <RadioButton android:id="@+id/dialog_add_class_grp_btn_orange" 
 	            android:layout_height="50dp"
 	            android:layout_width="50dp"
-	            android:background="#FFA500" />
+	            android:background="#FFA500" 
+	                android:gravity="center" />
 	        
-	        <ToggleButton android:id="@+id/dialog_add_class_grp_btn_gray" 
+	        <RadioButton android:id="@+id/dialog_add_class_grp_btn_gray" 
 	            android:layout_height="50dp"
 	            android:layout_width="50dp"
-	            android:background="#888888" />
+	            android:background="#888888" 
+	                android:gravity="center" />
 	        
-	        <ToggleButton android:id="@+id/dialog_add_class_grp_btn_purple" 
+	        <RadioButton android:id="@+id/dialog_add_class_grp_btn_purple" 
 	            android:layout_height="50dp"
 	            android:layout_width="50dp"
-	            android:background="#800080" />
+	            android:background="#800080" 
+	                android:gravity="center" />
 	        
 	    </RadioGroup>
     </HorizontalScrollView>

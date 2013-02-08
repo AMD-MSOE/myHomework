@@ -89,7 +89,7 @@ public class ClassesActivity extends Activity{
 				String name = className.getText().toString();
 				int classColor = Color.WHITE;
 				if (colorButtons.getCheckedRadioButtonId() != -1){
-					ToggleButton selectedColor = (ToggleButton)dialog.findViewById(colorButtons.getCheckedRadioButtonId());
+					RadioButton selectedColor = (RadioButton)dialog.findViewById(colorButtons.getCheckedRadioButtonId());
 					if (selectedColor.equals(blue)){
 						classColor = Color.BLUE;
 					} else if (selectedColor.equals(gray)){
