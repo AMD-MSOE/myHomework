@@ -55,9 +55,9 @@ public class SimpleListAdapter<T extends MyHomeworkModel> extends BaseAdapter {
     	TextView txtGroup = (TextView) view.findViewById(R.id.adapter_item_lbl_name);
     	
     	txtGroup.setText(model.getName());
-    	view.setBackgroundColor(Color.argb(60, Color.red(model.getColor()), Color.green(model.getColor()), Color.blue(model.getColor())));
+    	view.setBackgroundColor(model.getColor());
     	
-    	view.findViewById(R.id.adapter_item_transparent).setBackgroundColor(model.getColor());
+    	view.findViewById(R.id.adapter_item_transparent).setBackgroundColor(Color.argb(60, Color.red(model.getColor()), Color.green(model.getColor()), Color.blue(model.getColor())));
     	
 		return view;
 	}
