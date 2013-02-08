@@ -6,13 +6,6 @@
     android:background="#FFFFFF" >
     
     <include android:id="@+id/activity_main_action_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/action_bar" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        tools:context=".MainActivity" />
     
     <TableLayout
         android:id="@+id/tableLayout"
